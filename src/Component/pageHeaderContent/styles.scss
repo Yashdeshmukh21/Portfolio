@@ -1,0 +1,45 @@
+/* Ensure that the navbar is fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10; /* Ensures the navbar stays on top of other elements */
+    background-color: #fff; /* Adjust as needed */
+    height: 60px; /* Example height */
+}
+
+/* The wrapper positioning */
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px dashed var(--yellow-theme-main-color);
+    margin-top: 75px; /* Adjust based on your navbar height */
+}
+
+.wrapper h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1rem;
+    text-transform: capitalize;
+    color: var(--yellow-theme-main-color);
+    display: flex;
+    flex-grow: 1;
+}
+
+.wrapper span svg {
+    color: var(--yellow-theme-main-color);
+}
+
+/* Example media query to handle smaller screen sizes */
+@media (max-width: 768px) {
+    .wrapper h2 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+    .wrapper {
+        padding: 15px;
+        margin-top: 50px; /* Adjust for smaller navbar height */
+    }
+}
