@@ -4,7 +4,7 @@ import PageHeaderContent from "../../Component/pageHeaderContent/Index";
 import ImageOne from "../../images/helping hand.jpg";
 import ImageTwo from "../../images/therapy.jpg";
 import ImageThree from "../../images/myportfolio.jpg.png";
-import ImageFour from "../../images/Erp.jpg";
+import ImageFour from "../../images/Nebula tech.png";
 import ImageFive from "../../images/image5.jpg";
 import "./styles.scss";
 import { useState } from "react";

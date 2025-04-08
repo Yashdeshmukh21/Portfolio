@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaHome, FaUser, FaCode, FaFileAlt, FaBriefcase, FaEnvelope } from "react-icons/fa";
 import { ImYahoo2 } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HiX } from "react-icons/hi";
 import "./styles.scss";
 
@@ -16,12 +16,11 @@ const data = [
 
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
+  const location = useLocation();
 
   const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
-
-
 
   return (
     <nav className="navbar">
@@ -34,9 +33,10 @@ const Navbar = () => {
           {data.map((item, key) => (
             <li key={key} className="navbar__container__menu__item">
               <Link
-                className="navbar__container__menu__item__links"
+                className={`navbar__container__menu__item__links ${
+                  location.pathname === item.to ? "active-link" : ""
+                }`}
                 to={item.to}
-                
               >
                 {item.icon} {item.label}
               </Link>

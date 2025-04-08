@@ -43,10 +43,18 @@
           align-items: center;
           gap: 0.5rem;
           padding: 0.5rem;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: white;
+          }
         }
 
-        &__links:hover {
+        // 🔥 Active Link Styling
+        &__links.active-link {
           color: white;
+          // font-weight: bold;
+          border-bottom: 2px solid var(--yellow-theme-main-color);
         }
       }
     }
@@ -83,6 +91,12 @@
         width: 100%;
         font-size: 1.4rem;
         justify-content: center;
+      }
+
+      &__links.active-link {
+        color: white;
+        font-weight: bold;
+        border-bottom: 2px solid var(--yellow-theme-main-color);
       }
     }
   }
