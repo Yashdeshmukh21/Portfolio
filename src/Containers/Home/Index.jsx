@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "react-simple-animate";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaPaperPlane } from "react-icons/fa"; 
 import "./styles.scss";
 
 const Home = () => {
@@ -11,21 +11,10 @@ const Home = () => {
     navigate("/contact");
   };
 
-  const handleDownloadResume = () => {
-    const resumeUrl = "/YashDeshmukhCV-1.pdf";
-    const link = document.createElement("a");
-    link.href = resumeUrl;
-    link.download = "Yash_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
-
   return (
     <div className="home-container">
       <section id="home" className="home">
         <div className="home__text-wrapper">
-
           <h1>
             Hello, I'm Yash
             <br />
@@ -36,19 +25,20 @@ const Home = () => {
           play
           duration={1.5}
           delay={1}
-          start={{
-            transform: "translateY(550px)",
-          }}
-          end={{
-            transform: "translateY(0px)",
-          }}
+          start={{ transform: "translateY(550px)" }}
+          end={{ transform: "translateY(0px)" }}
         >
           <div className="home__contact-me">
-            <button onClick={handleNavigateToContactMePage}>Hire Me</button>
-            <button onClick={handleDownloadResume}>
-              <FaDownload />
-              <span>Download Resume</span>
+            <button onClick={handleNavigateToContactMePage}>
+              <FaPaperPlane />
+              <span>Hire Me</span>
             </button>
+            <a href="/YashDeshmukhCV.pdf" download="Yash_resume.pdf">
+              <button>
+                <FaDownload />
+                <span>Download Resume</span>
+              </button>
+            </a>
           </div>
         </Animate>
       </section>

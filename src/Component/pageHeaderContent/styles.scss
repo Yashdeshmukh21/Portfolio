@@ -1,10 +1,10 @@
-/* Ensure that the navbar is fixed at the top */
+
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10; /* Ensures the navbar stays on top of other elements */
+    z-index: 10; 
     background-color: #fff; /* Adjust as needed */
     height: 60px; /* Example height */
 }
@@ -15,7 +15,7 @@
     align-items: center;
     padding: 20px;
     border-bottom: 1px dashed var(--yellow-theme-main-color);
-    margin-top: 75px; /* Adjust based on your navbar height */
+    margin-top: 15px; /* Adjust based on your navbar height */
 }
 
 .wrapper h2 {

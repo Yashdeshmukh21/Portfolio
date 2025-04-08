@@ -17,9 +17,11 @@ const data = [
 const Navbar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
 
-  const HandleToggleIcon = () => {
+  const handleToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
+
+
 
   return (
     <nav className="navbar">
@@ -31,15 +33,18 @@ const Navbar = () => {
         <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}>
           {data.map((item, key) => (
             <li key={key} className="navbar__container__menu__item">
-              <Link className="navbar__container__menu__links" to={item.to}>
+              <Link
+                className="navbar__container__menu__item__links"
+                to={item.to}
+                
+              >
                 {item.icon} {item.label}
               </Link>
             </li>
           ))}
         </ul>
 
-        {/* Mobile Menu Icon */}
-        <div className="nav-icon" onClick={HandleToggleIcon}>
+        <div className="nav-icon" onClick={handleToggleIcon}>
           {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
         </div>
       </div>

@@ -3,7 +3,7 @@ import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../Component/pageHeaderContent/Index";
 import ImageOne from "../../images/helping hand.jpg";
 import ImageTwo from "../../images/therapy.jpg";
-import ImageThree from "../../images/image3.jpg";
+import ImageThree from "../../images/myportfolio.jpg.png";
 import ImageFour from "../../images/Erp.jpg";
 import ImageFive from "../../images/image5.jpg";
 import "./styles.scss";
@@ -24,7 +24,7 @@ const portfolioData = [
   },
   {
     id: 3,
-    name: "Supplier Design",
+    name: "My PortFolio",
     image: ImageThree,
     link: "",
   },

@@ -23,8 +23,8 @@ export const data = {
             description: "88.00%",
         },
         {
-            title: "Higher Secondary : ",
-            subtitle: "KHAMGAON JUNIOR COLLEGE,KHAMGAON",
+            title: "Higher Secondary :",
+            subtitle:"JUNIOR COLLEGE KHAMGAON",
             description: "86.66%",
         },
         {

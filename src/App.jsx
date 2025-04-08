@@ -12,7 +12,7 @@ import Portfolio from "./Containers/Portfolio/Index.jsx";
 import Contact from "./Containers/Contact/Index.jsx";
 import Navbar from "./Component/Navbar/Index.jsx";
 import Footer from "./Component/Footer/Index.jsx";
-import particles from "./utils/particles"; // Ensure this path is correct
+import particles from "./utils/particles"; 
 
 function App() {
   const location = useLocation();
@@ -32,9 +32,11 @@ function App() {
       )}
 
       {/* Navbar */}
+
       <Navbar />
 
       {/* Main page content */}
+
       <div className="App__main-page-content">
         <Routes>
           <Route index path="/" element={<Home />} />
@@ -47,7 +49,9 @@ function App() {
       </div>
 
       {/* Footer */}
+
       <Footer />
+      
     </div>
   );
 }
