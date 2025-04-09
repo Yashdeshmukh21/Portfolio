@@ -32,9 +32,9 @@ const skills = [
     description: "State management library",
   },
   {
-    icon: <SiHibernate />,
-    title: "Hibernate",
-    description: "ORM framework for Java",
+    icon: <SiReactrouter />,
+    title: "React Router",
+    description: "Routing for React applications",
   },
   {
     icon: <FaGitAlt />,
@@ -47,14 +47,14 @@ const skills = [
     description: "Frontend framework for responsive design",
   },
   {
+    icon: <SiHibernate />,
+    title: "Hibernate",
+    description: "ORM framework for Java",
+  },
+  {
     icon: <SiTailwindcss />,
     title: "Tailwind",
     description: "Utility-first CSS framework",
-  },
-  {
-    icon: <SiReactrouter />,
-    title: "React Router",
-    description: "Routing for React applications",
   },
   {
     icon: <SiSpringboot />,

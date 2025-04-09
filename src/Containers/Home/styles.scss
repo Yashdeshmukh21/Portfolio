@@ -38,64 +38,21 @@
     justify-content: center;
     margin-top: 30px;
     gap: 20px;
+    flex-wrap: wrap;
 
     @media only screen and (max-width: 550px) {
       flex-direction: column;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
-    a {
-      text-decoration: none;
-
-      button {
-        all: unset; // Reset default styles including blue outline
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 40px;
-        font-size: 1.5rem;
-        background: transparent;
-        color: var(--yellow-theme-main-color);
-        border: 1.5px solid var(--yellow-theme-main-color);
-        border-radius: 4px;
-        font-weight: 500;
-        gap: 10px;
-        transition: all 0.3s ease;
-        cursor: pointer;
-
-        &:hover {
-          background: var(--yellow-theme-main-color);
-          color: #000000;
-        }
-
-        svg {
-          font-size: 1.2rem;
-        }
-
-        @media only screen and (max-width: 768px) {
-          padding: 10px 30px;
-          font-size: 1.2rem;
-
-          svg {
-            font-size: 1rem;
-          }
-        }
-
-        @media only screen and (max-width: 550px) {
-          width: 100%;
-          padding: 10px 20px;
-          font-size: 1rem;
-
-          svg {
-            font-size: 0.9rem;
-          }
-        }
-      }
-    }
-
-    button {
+    button,
+    a button {
+      all: unset;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       padding: 10px 40px;
       font-size: 1.5rem;
       background: transparent;
@@ -103,20 +60,13 @@
       border: 1.5px solid var(--yellow-theme-main-color);
       border-radius: 4px;
       font-weight: 500;
-      display: flex;
-      align-items: center;
       gap: 10px;
       transition: all 0.3s ease;
+      width: fit-content;
 
       &:hover {
         background: var(--yellow-theme-main-color);
         color: #000000;
-      }
-
-      &:focus,
-      &:active {
-        outline: none;
-        box-shadow: none;
       }
 
       svg {
@@ -133,14 +83,17 @@
       }
 
       @media only screen and (max-width: 550px) {
-        width: 100%;
-        padding: 10px 20px;
         font-size: 1rem;
+        padding: 10px 25px;
 
         svg {
           font-size: 0.9rem;
         }
       }
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 }

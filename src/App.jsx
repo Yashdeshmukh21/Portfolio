@@ -12,7 +12,11 @@ import Portfolio from "./Containers/Portfolio/Index.jsx";
 import Contact from "./Containers/Contact/Index.jsx";
 import Navbar from "./Component/Navbar/Index.jsx";
 import Footer from "./Component/Footer/Index.jsx";
+
+
+
 import particles from "./utils/particles"; 
+import ErrorPage from "./Containers/Error Page/error.jsx";
 
 function App() {
   const location = useLocation();
@@ -32,11 +36,9 @@ function App() {
       )}
 
       {/* Navbar */}
-
       <Navbar />
 
       {/* Main page content */}
-
       <div className="App__main-page-content">
         <Routes>
           <Route index path="/" element={<Home />} />
@@ -45,13 +47,12 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<ErrorPage/>} /> 
         </Routes>
       </div>
 
       {/* Footer */}
-
       <Footer />
-      
     </div>
   );
 }

@@ -1,7 +1,7 @@
 :root {
   --yellow-theme-main-color: #ffcb05;
   --yellow-theme-sub-text-color: #fffde7;
-  --skills-card-bg: rgba(255, 255, 255, 0.05);
+  --skills-card-gradient: linear-gradient(45deg, #3a3a3a 0%, #b6acac8e 50%, #3a3a3a 100%);
 }
 
 .skills {
@@ -20,7 +20,7 @@
   }
 
   .skill-card {
-    background: var(--skills-card-bg);
+    background: var(--skills-card-gradient);
     border-radius: 12px;
     padding: 30px 20px;
     text-align: center;
@@ -46,7 +46,7 @@
 
     p {
       font-size: 1rem;
-      color: #dcdcdc;
+      color: #f0f0f0;
     }
   }
 }
@@ -72,3 +72,4 @@
     }
   }
 }
+

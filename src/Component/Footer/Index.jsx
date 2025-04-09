@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
         {/* Social Media Icons */}
         <div className="footer__social-icons">
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Yashdeshmukh21/Portfolio"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
@@ -21,26 +21,28 @@ const Footer = () => {
             <FaGithub className="footer__icon" />
           </a>
           <a
-            href="https://www.linkedin.com/in/yash-deshmukh-060b242bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"
+            href="https://www.linkedin.com/in/yash-deshmukh-060b242bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
             <FaLinkedin className="footer__icon" />
           </a>
           <a
-            href="https://twitter.com/yourusername"
+            href="https://www.instagram.com/yashh.__32?igsh=ODN2bmg5a2g0Y3ht"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Twitter"
+            aria-label="Instagram"
           >
-            <FaTwitter className="footer__icon" />
+            <FaInstagram className="footer__icon" />
           </a>
           <a
-            href="mailto:youremail@example.com"
+            href="https://www.facebook.com/ajit.babar.3954"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Email"
+            aria-label="Facebook"
           >
-            <FaEnvelope className="footer__icon" />
+            <FaFacebook className="footer__icon" />
           </a>
         </div>
 
