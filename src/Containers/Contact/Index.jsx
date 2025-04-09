@@ -58,7 +58,7 @@ const ContactPage = () => {
           boxShadow: '0 0 14px rgba(255, 204, 0, 0.3)',
         }}
         style={{
-          zIndex: 99999,
+          zIndex: 999,
           position: 'fixed',
           top: '1rem',
           left: '50%',
