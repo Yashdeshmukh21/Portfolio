@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsInfoCircleFill } from "react-icons/bs";
 import PageHeaderContent from "../../Component/pageHeaderContent/Index";
 import ImageOne from "../../images/helping hand.jpg";
@@ -7,7 +7,6 @@ import ImageThree from "../../images/myportfolio.jpg.png";
 import ImageFour from "../../images/Nebula tech.png";
 import ImageFive from "../../images/image5.jpg";
 import "./styles.scss";
-import { useState } from "react";
 
 const portfolioData = [
   {
@@ -71,7 +70,7 @@ const Portfolio = () => {
 
   const handleVisitClick = (link) => {
     if (link) {
-      window.open(link, "_blank"); // Opens the link in a new tab
+      window.open(link, "_blank");
     }
   };
 
@@ -108,7 +107,7 @@ const Portfolio = () => {
             >
               <div className="portfolio__content__cards__item__img-wrapper">
                 <a>
-                  <img alt="dummy data" src={item.image} />
+                  <img alt="portfolio" src={item.image} />
                 </a>
               </div>
               <div className="overlay">

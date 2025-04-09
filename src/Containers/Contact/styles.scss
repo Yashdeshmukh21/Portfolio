@@ -20,7 +20,7 @@
     width: 100%;
     text-align: center;
     color: var(--yellow-theme-sub-text-color);
-    margin-top: 1cap; // 👉 add spacing from the top
+    margin-top: 1cap;
 
     h1 {
       font-size: 3rem;
@@ -94,8 +94,8 @@
       }
 
       .submit-button {
-        padding: 0.75rem 1.5rem; // Smaller height and width
-        font-size: 1.5rem;        // Slightly smaller text
+        padding: 0.75rem 1.5rem;
+        font-size: 1.5rem;
         color: #000;
         background-color: var(--yellow-theme-main-color);
         border: none;
@@ -104,22 +104,20 @@
         font-weight: 600;
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
         transition: background-color 0.3s ease, transform 0.2s ease;
-        width:fit-content;
+        width: fit-content;
         align-self: center;
-        
+
         &:hover {
           background-color: #facc15;
           transform: translateY(-2px);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
-      
+
         &:focus {
           outline: 2px solid var(--yellow-theme-main-color);
           outline-offset: 2px;
         }
       }
-      
-      
     }
   }
 }
@@ -136,15 +134,15 @@
 
     .contact-card {
       padding: 2rem;
-      max-width: 90%;
+      max-width: 100%;
       margin-top: 2rem;
 
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
       }
 
       p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
 
       .contact-form {
@@ -159,12 +157,18 @@
           textarea {
             padding: 0.75rem;
             font-size: 1.1rem;
+            width: 100%;
+          }
+
+          .input-icon {
+            font-size: 1.2rem;
           }
         }
 
         .submit-button {
-          padding: 0.5rem 1rem; // 👉 smaller button on mobile too
+          padding: 0.6rem 1.2rem;
           font-size: 1rem;
+          width: 100%;
         }
       }
     }

@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { FaBars, FaHome, FaUser, FaCode, FaFileAlt, FaBriefcase, FaEnvelope } from "react-icons/fa";
+import {
+  FaBars,
+  FaHome,
+  FaUser,
+  FaCode,
+  FaFileAlt,
+  FaBriefcase,
+  FaEnvelope,
+} from "react-icons/fa";
 import { ImYahoo2 } from "react-icons/im";
 import { Link, useLocation } from "react-router-dom";
 import { HiX } from "react-icons/hi";
@@ -29,7 +37,9 @@ const Navbar = () => {
           <ImYahoo2 size={40} />
         </Link>
 
-        <ul className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}>
+        <ul
+          className={`navbar__container__menu ${toggleIcon ? "active" : ""}`}
+        >
           {data.map((item, key) => (
             <li key={key} className="navbar__container__menu__item">
               <Link
@@ -37,6 +47,7 @@ const Navbar = () => {
                   location.pathname === item.to ? "active-link" : ""
                 }`}
                 to={item.to}
+                onClick={() => setToggleIcon(false)} // 🔥 This is the only addition
               >
                 {item.icon} {item.label}
               </Link>
