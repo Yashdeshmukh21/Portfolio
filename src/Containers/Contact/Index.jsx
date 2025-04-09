@@ -60,7 +60,7 @@ const ContactPage = () => {
         style={{
           zIndex: 999,
           position: 'fixed',
-          top: '1rem',
+          top: '5em',
           left: '50%',
           transform: 'translateX(-50%)'
         }}
