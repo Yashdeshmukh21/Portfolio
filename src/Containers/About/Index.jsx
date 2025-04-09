@@ -23,11 +23,11 @@ const personalDetails = [
   },
   {
     label: "Email  :",
-    value: "yash123@gmail.com",
+    value: "yashdeshmukh465@gmail.com",
   },
   {
     label: "Contact No  :",
-    value: "8325744223"
+    value: "9325744223"
   },
 ];
 

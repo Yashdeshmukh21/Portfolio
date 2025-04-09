@@ -26,7 +26,7 @@ const portfolioData = [
     id: 3,
     name: "My PortFolio",
     image: ImageThree,
-    link: "",
+    link: "https://yashdeshmukh07.netlify.app/",
   },
   {
     id: 2,
