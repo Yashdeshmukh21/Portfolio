@@ -2,18 +2,12 @@ export const data = {
     experience: [
       {
         title: "Frontend Developer",
-        subtitle: "SMILE AUTOMATIONS",
-        description: "User Experience, Visual Design",
-        date: "Jul 2023 - Dec 2023"
-      },
-      {
-        title: "UX Designer",
         subtitle: "CODE-CRAFTER SERVICES",
         description: "User Experience, Visual Design",
         date: "Jan 2024 - Jul 2024"
       },
       {
-        title: "Developer",
+        title: "Full-stack Developer",
         subtitle: "NEBULA TECHNOLOGY",
         description: "Front-End & Back-End Developer",
         date: " Aug 2024 - Present"
