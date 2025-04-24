@@ -15,15 +15,16 @@ const Resume = () => {
         icon={<BsInfoCircleFill size={40} />}
       />
       <div className="timeline">
-        <div className="timeline__experience">
-          <h3 className="timeline__experience__header-text">
-            Experience
+        {/* Education First */}
+        <div className="timeline__education">
+          <h3 className="timeline__education__header-text">
+            Education
           </h3>
           <VerticalTimeline layout={'1-column'} lineColor="var(--yellow-theme-main-color)">
-            {data.experience.map((item, i) => (
+            {data.education.map((item, i) => (
               <VerticalTimelineElement
                 key={i}
-                className="timeline__experience__vertical-timeline-element"
+                className="timeline__education__vertical-timeline-element"
                 contentStyle={{
                   background: 'none',
                   color: 'var(--yellow-theme-sub-text-color)',
@@ -48,15 +49,16 @@ const Resume = () => {
           </VerticalTimeline>
         </div>
 
-        <div className="timeline__education">
-          <h3 className="timeline__education__header-text">
-            Education
+        {/* Experience Second */}
+        <div className="timeline__experience">
+          <h3 className="timeline__experience__header-text">
+            Experience
           </h3>
           <VerticalTimeline layout={'1-column'} lineColor="var(--yellow-theme-main-color)">
-            {data.education.map((item, i) => (
+            {data.experience.map((item, i) => (
               <VerticalTimelineElement
                 key={i}
-                className="timeline__education__vertical-timeline-element"
+                className="timeline__experience__vertical-timeline-element"
                 contentStyle={{
                   background: 'none',
                   color: 'var(--yellow-theme-sub-text-color)',
